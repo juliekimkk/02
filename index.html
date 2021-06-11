@@ -36,12 +36,18 @@
                 text-align: center;
                 padding-left: 16px;
                 padding-right: 16px;
+ 
             }
 
             .content .inner h1 {
                 font-size: 62px;
                 color: white;
                 text-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+                color: #fc46ff;
+                background-color: black;
+                width:400px;
+                margin: 0 auto;
+
             }
 
 			.video-background-controls button {
@@ -76,32 +82,33 @@
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/javascript" src="jquery.youtube-background.js?v=1.0.8"></script>
+
     </head>
     <body>
         <div class="container">
             <main>
                 <div class="example-marquee">
-                    <div id="ytbg" data-ytbg-fade-in="true" data-youtube="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div>
+                    <div id="ytbg" data-ytbg-fade-in="true" data-youtube="https://www.youtube.com/watch?v=BfFV2AmC7aY"></div>
                     <div class="content">
                         <div class="inner">
-                            <h1>Cake in a frying pan? Impossible!</h1>
+                            <h1><p class="mainText1">권PD 포폴1</h1></p>
                         </div>
                     </div>
                 </div>
 				<div class="example-marquee">
-                    <div id="ytbg2" data-ytbg-play-button="true" data-youtube="https://www.youtube.com/watch?v=MgDZBqTuUuE"></div>
+                    <div id="ytbg2" data-ytbg-play-button="true" data-youtube="https://www.youtube.com/watch?v=-O36v2ULN9w"></div>
                     <div class="content">
                         <div class="inner">
-                            <h1>Click the button to pause.</h1>
+                            <h1><p class="mainText2">권PD 포폴2</h1></p>
                         </div>
                     </div>
                 </div>
 				<div class="example-marquee">
-                    <div id="ytbg3" data-ytbg-mute-button="true" data-ytbg-play-button="true" data-ytbg-resolution="4:3" data-youtube="https://www.youtube.com/watch?v=dQw4w9WgXcQ
+                    <div id="ytbg3" data-ytbg-mute-button="true" data-ytbg-play-button="true" data-ytbg-resolution="4:3" data-youtube="https://www.youtube.com/watch?v=unbdAmQ2EfM
 					"></div>
                     <div class="content">
                         <div class="inner">
-                            <h1>Mute / Unmute.</h1>
+                            <h1><p class="mainText3">권PD 포폴3</h1></p>
                         </div>
                     </div>
                 </div>
@@ -111,6 +118,21 @@
             jQuery(document).ready(function() {
       				jQuery('[data-youtube]').youtube_background();
             });
+        </script>
+        <script type="text/javascript">
+                     $('.mainText1').click(function(){
+                       $('.mainText1').hide();
+                    })
+
+                    $('.mainText2').click(function(){
+                       $('.mainText2').hide();
+                    })
+
+                    $('.mainText3').click(function(){
+                       $('.mainText3').hide();
+                    })
+                    alert('건빵 바보야 이거뭐게~~~~');
+               
         </script>
     </body>
 </html>
